@@ -29,9 +29,13 @@ export const ColumnTd = styled.td`
   flex-direction: column;
   align-items: center;
   border: 1px solid white;
-  &::first-letter {
+`;
+
+export const NewColumnTd = styled(ColumnTd)`
+  /* &::first-letter {
     text-transform: uppercase;
-  }
+  } */
+  text-transform: capitalize;
 `;
 
 export const ColumnThead = styled.thead`

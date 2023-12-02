@@ -4,6 +4,7 @@ import {
   ColumnTh,
   ColumnThead,
   ColumnTr,
+  NewColumnTd,
   Wrapper,
 } from './TransactionHistory.styled';
 
@@ -20,7 +21,7 @@ export const TransactionHistory = ({ items }) => {
       {items.map(items => (
         <ColumnTbody key={items.id}>
           <ColumnTr>
-            <ColumnTd>{items.type}</ColumnTd>
+            <NewColumnTd>{items.type}</NewColumnTd>
             <ColumnTd>{items.amount}</ColumnTd>
             <ColumnTd>{items.currency}</ColumnTd>
           </ColumnTr>
